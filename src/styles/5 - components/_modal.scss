@@ -1,0 +1,34 @@
+.ReactModal__Overlay {
+  z-index: map-get($z-index, 'modal');
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  padding: 0;
+  border: none;
+  background: none;
+  
+
+  i {
+		color: lighten($off-black, 10%);
+  }
+
+  &:hover {
+  	i {
+			color: $off-black;
+  	}
+  }
+}
+
+.ReactModal__Content {
+  @include mobile {
+    width: 90%;
+  }
+}
