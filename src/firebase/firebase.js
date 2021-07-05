@@ -77,9 +77,9 @@ class Firebase {
 
   setAuthPersistence = () => this.auth.setPersistence(app.auth.Auth.Persistence.LOCAL);
 
-  getproducts = (lastRefkey) => {
+  getProducts = (lastRefkey) => {
     let didTimeout = false;
-
+    console.log("object")
     return new Promise(async (resolve, reject) => {
       if (lastRefkey) {
         try{
@@ -89,7 +89,7 @@ class Firebase {
           const products = [];
           snapshot.forEach(doc => products.push({ id: doc.id, ...doc.data() }));
           const lastKey = snapshot.docs[snapshot.docs.length - 1];
-
+          console.log("helloo")
           resolve({ products, lastKey });
         }catch(e){
           reject(':( Failed to fetch products.')
@@ -109,10 +109,12 @@ class Firebase {
           if (!didTimeout){
             const products = [];
             snapshot.forEach(doc => products.push({id: doc.id, ...doc.data()}));
+            console.log(products)
             const lastKey = snapshot.docs[snapshot.docs.length - 1];
             resolve({products, lastKey, total})
           }
         }catch(e) {
+          console.log(e)
           if (didTimeout) return;
           console.log('Failed to fetch products: an error occure while trying to fetch products or there is no products.', e);
           reject('failed to fetch products.')

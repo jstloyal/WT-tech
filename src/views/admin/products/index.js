@@ -25,8 +25,6 @@ const Products =({history, location})=>{
         }
     }));
 
-    console.log(store);
-
     const dispatch = useDispatch();
     const onClickAddProduct = () => {
         history.push(ADD_PRODUCT);

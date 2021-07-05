@@ -25,11 +25,9 @@ const Home = (props) => {
       totalItems: state.products.total,
       isLoading: state.app.loading,
       filteredProducts: selectFilter(state.products.items, state.filter),
-      // requestStatus: state.app.requestStatus
+      requestStatus: state.app.requestStatus
     }
   }));
-
-  console.log(store);
 
   useEffect(() => {
     onProductsLengthChanged();
@@ -46,7 +44,7 @@ const Home = (props) => {
       setColumnCount(store.filteredProducts.length);
     }
   };
-  
+
   const isFiltered = ['keyword', 'brand', 'minPrice', 'maxPrice', 'sortBy'].some(key => !!store.filter[key]);
   const displaySelected = product => setProductSelected(product);
   const foundOnBasket = id => !!store.basket.find(item => item.id === id); 
