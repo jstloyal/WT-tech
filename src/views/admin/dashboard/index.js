@@ -37,7 +37,8 @@ const Dashboard =()=>{
 
     useEffect(()=> {
         getListUsers();
-    },[])
+    },[]);
+    
     return(
         <div className="product-form-inputsadmin">
             <div className="d-flex">

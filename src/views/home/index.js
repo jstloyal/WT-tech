@@ -25,7 +25,7 @@ const Home = (props) => {
       totalItems: state.products.total,
       isLoading: state.app.loading,
       filteredProducts: selectFilter(state.products.items, state.filter),
-      requestStatus: state.app.requestStatus
+      // requestStatus: state.app.requestStatus
     }
   }));
 
@@ -46,6 +46,7 @@ const Home = (props) => {
       setColumnCount(store.filteredProducts.length);
     }
   };
+  
   const isFiltered = ['keyword', 'brand', 'minPrice', 'maxPrice', 'sortBy'].some(key => !!store.filter[key]);
   const displaySelected = product => setProductSelected(product);
   const foundOnBasket = id => !!store.basket.find(item => item.id === id); 
@@ -82,7 +83,7 @@ const Home = (props) => {
               location={props.location}
               lastRefKey={store.lastRefKey}
               totalItems={store.totalItems}
-              requestStatus={store.requestStatus}
+              // requestStatus={store.requestStatus}
           >
             <Modal 
                 isOpen={isOpenModal} 

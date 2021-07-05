@@ -9,6 +9,7 @@ const AddProduct =()=>{
     const onSubmit = (product) => {
         dispatch(addProduct(product));
     };
+    
     return(
         <div className="product-form-container">
             <h2>Add New Product</h2>

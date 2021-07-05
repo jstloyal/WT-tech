@@ -25,12 +25,13 @@ const Products =({history, location})=>{
         }
     }));
 
-    console.log(store.lastRefKey);
+    console.log(store);
 
     const dispatch = useDispatch();
     const onClickAddProduct = () => {
         history.push(ADD_PRODUCT);
     };
+
     return(
         <Boundary>
             <div className="product-admin-header">
@@ -71,7 +72,7 @@ const Products =({history, location})=>{
                      productsLength={store.productsLength}
                      lastRefKey={store.lastRefKey}
                      totalItems={store.totalItems}
-                     requestStatus={store.requestStatus}
+                    //  requestStatus={store.requestStatus}
                 >
                     <ProductAppliedFilters filter={store.filter}/>
                     {store.filteredProducts.length > 0 && (
@@ -87,7 +88,7 @@ const Products =({history, location})=>{
                             <h5>Price</h5>
                         </div>
                         <div className="grid-col">
-                            <h5>Data Added</h5>
+                            <h5>Date Added</h5>
                         </div>
                         <div className="grid-col">
                             <h5>Qty</h5>
@@ -95,10 +96,10 @@ const Products =({history, location})=>{
                     </div>
                     )}
                     {store.filteredProducts.length === 0 ? new Array(10).fill({}).map((product, index)=>(        
-                           <ProductItem
+                        <ProductItem
                         key={`product-skeleton ${index}`}
                         product={product}
-                       />   
+                       />
                     )):store.filteredProducts.map(product => (
                         <ProductItem
                         key={product.id}
