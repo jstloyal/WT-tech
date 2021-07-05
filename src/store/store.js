@@ -21,7 +21,6 @@ export default () => {
     const store = createStore(
         persistCombineReducers(authPersistConfig, rootReducer),
         composeWithDevTools(applyMiddleware(sagaMiddleware))
-
     );
     const persistor = persistStore(store);
     sagaMiddleware.run(rootSaga);

@@ -55,13 +55,12 @@ const SignIn = (props) =>{
     const onSigningWithGoogle = () => {
         dispatch(signInWithGoogle());
         setProviderSelected('google');
-
     };
 
 
     const isSuccess = !!authStatus.success && authStatus.type === 'auth';
 
-    return(
+    return (
         <div className="signin-content">
             {isSuccess && (
                 <div className="loader">
@@ -137,7 +136,7 @@ const SignIn = (props) =>{
                                 {isSigningIn && providerSelected === 'google' ? (
                                     <CircularProgress  theme='dark'/>
                                 ): (
-                                    <i className="fab fa-google"/>
+                                    <i className="fa fa-google-plus"/>
                                  )}
                                  <span>Sign in with Google</span>
                             </button>

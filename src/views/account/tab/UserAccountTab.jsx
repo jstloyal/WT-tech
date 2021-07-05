@@ -47,7 +47,7 @@ const UserProfile = (props) => {
                     <span>Mobile</span>
                     <br/>
                     {profile.mobile.data ? (
-                        <h5>{profile.mobile.data.num ? profile.mobile.data.num : '+92'}</h5>
+                        <h5>{profile.mobile.data.num ? profile.mobile.data.num : '+234'}</h5>
                     ): (
                         <h5 className="text-subtle text-italic">Mobile not Set </h5>
 

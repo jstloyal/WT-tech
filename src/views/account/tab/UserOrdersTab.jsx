@@ -23,7 +23,6 @@ const userOrders = () => {
                     price:doc.data().price
                 })
             });
-            console.log(orders)
             orders.forEach(products=>{
                 userProducts.push(products.name)
             });

@@ -230,10 +230,10 @@ const EditProfile = (props) => {
             <span className="d-block padding-s">Mobile</span>
           )}
           <PhoneInput 
-              country={'ph'} 
+              country={'ng'} 
               inputExtraProps={{ required: true }}
               inputClass={`input-form d-block ${field.mobile.error ? 'input-error' : ''}`}
-              masks={{'ph': '+.. .... ... ....'}}
+              masks={{'ng': '... .... ... ....'}}
               onChange={onMobileChange}
               disabled={isLoading}
               readOnly={isLoading}
