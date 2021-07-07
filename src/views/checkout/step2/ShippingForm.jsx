@@ -96,7 +96,7 @@ const ShippingForm =({
                     {errorMobile ? <span className="input-message">{errorMobile}</span>
                     : (<span className="d-block padding-s">Mobile Number</span>)}
                     <PhoneInput 
-                        country={'ph'} 
+                        country={'ng'} 
                         inputExtraProps={{ required: true }}
                         inputClass={`input-form d-block ${errorClassName('mobile')}`}
                         masks={{'ph': '+.. .... ... ....'}}
@@ -119,10 +119,10 @@ const ShippingForm =({
                            />
                            <label className="d-flex w-100" htmlFor="shipping-option-checkbox">
                                 <h5 className="d-flex-grow-1 margin-0">
-                                    &nbsp; International Shipping &nbsp;
-                                    <span className="text-subtle">7-14 days</span>
+                                    &nbsp; Interstate Shipping &nbsp;
+                                    <span className="text-subtle">2-7 days</span>
                                 </h5>
-                                <h4 className="margin-0">$50.00</h4>
+                                <h4 className="margin-0">NGN 2,500.00</h4>
                            </label>
                        </div>
                    </div>

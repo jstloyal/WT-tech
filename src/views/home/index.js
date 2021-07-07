@@ -53,8 +53,6 @@ const Home = (props) => {
   
   return (
     <>
-    <i class="fa fa-check product-card-check"/>
-     
       <section className="product-list-wrapper">
 
         {!store.requestStatus && (
@@ -81,7 +79,7 @@ const Home = (props) => {
               location={props.location}
               lastRefKey={store.lastRefKey}
               totalItems={store.totalItems}
-              // requestStatus={store.requestStatus}
+              requestStatus={store.requestStatus}
           >
             <Modal 
                 isOpen={isOpenModal} 

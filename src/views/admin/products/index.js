@@ -70,7 +70,7 @@ const Products =({history, location})=>{
                      productsLength={store.productsLength}
                      lastRefKey={store.lastRefKey}
                      totalItems={store.totalItems}
-                    //  requestStatus={store.requestStatus}
+                     requestStatus={store.requestStatus}
                 >
                     <ProductAppliedFilters filter={store.filter}/>
                     {store.filteredProducts.length > 0 && (

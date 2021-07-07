@@ -107,7 +107,7 @@ const Navigation = ({ isAuth, path, history }) => {
               >
                 
                 <Badge count={store.basketLength}>
-                  <i className="fa fa-shopping-basket" style={{  fontSize: '2rem'}}/>
+                  <i className="fa fa-cart-plus" style={{  fontSize: '2rem'}}/>
                 </Badge>
               </button>
             )}

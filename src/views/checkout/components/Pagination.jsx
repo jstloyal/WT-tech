@@ -35,4 +35,5 @@ Pagination.defaultProps = {
     previousLabel: "Go Back",
     previousVisible: true
 }
-export default Pagination 
+
+export default Pagination;
