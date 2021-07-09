@@ -1,7 +1,7 @@
 .navigation {
   width: 100%;
   height: $nav-height;
-  background: linear-gradient(to right, #FFDEAD 0%, #FFDEAD 19%, #FFDEAD 60%, #FFDEAD 100%)!important;
+  background: $off-black !important;
 
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@
 }
 
 .navigation-menu-link {
-  color: $heading-color;
+  color: $white;
   padding: $s-size $m-size;
   text-decoration: none;
   font-size: $font-small;

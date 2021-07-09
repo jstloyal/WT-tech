@@ -117,6 +117,10 @@
   width: 50rem;
   margin: auto;
 
+  h3 {
+    color: $color-success !important;
+  }
+
   @include tablet {
     width: 100%;
   }
@@ -125,6 +129,10 @@
 .checkout-step-2 {
   width: 70rem;
   margin: auto;
+
+  h3 {
+    color: $color-success !important;
+  }
 
   @include tablet {
     width: 100%;
@@ -188,6 +196,11 @@
   padding: $m-size;
   border: 1px solid $border-color;
   background: #f1f1f1;
+
+  label h5,
+  label h4 {
+    color: $off-black !important;
+  }
 }
 
 .checkout-shipping-action {

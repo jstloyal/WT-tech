@@ -1,7 +1,7 @@
 .sidenavigation {
   width: 250px;
   height: 100%;
-  background: #FFDEAD; 
+  background: $off-black; 
   position: relative;
   padding-top: 1rem;
   border-right: 1px solid $border-color;
@@ -17,7 +17,7 @@
 .sidenavigation-menu {
   padding: $m-size 0 $m-size $l-size;
   display: block;
-  color: black;
+  color: $white;
   font-weight: bold;
   opacity: .8;
 

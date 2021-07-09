@@ -77,19 +77,19 @@ const Products =({history, location})=>{
                     <div className="grid grid-product grid-count-6">
                         <div className="grid-col"/>
                         <div className="grid-col">
-                            <h5>Name</h5>
+                            <h5 className="admin-head">Name</h5>
                         </div>
                         <div className="grid-col">
-                            <h5>Brand</h5>
+                            <h5 className="admin-head">Brand</h5>
                         </div>
                         <div className="grid-col">
-                            <h5>Price</h5>
+                            <h5 className="admin-head">Price</h5>
                         </div>
                         <div className="grid-col">
-                            <h5>Date Added</h5>
+                            <h5 className="admin-head">Date Added</h5>
                         </div>
                         <div className="grid-col">
-                            <h5>Qty</h5>
+                            <h5 className="admin-head">Qty</h5>
                         </div>
                     </div>
                     )}

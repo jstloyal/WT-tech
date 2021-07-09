@@ -13,7 +13,7 @@
  
 }
 .ordersshowtoadmin{
-  background-color: white;
+  background-color: $color-success;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -48,6 +48,10 @@
   padding: 0 $l-size;
 }
 
+.admin-head {
+  color: $off-black !important;
+}
+
 .product-admin-filter-wrapper {
   width: 250px;
   padding: $m-size;
@@ -65,4 +69,7 @@
 
 .product-form-container {
   padding: $l-size;
+  h2 {
+    color: $off-black !important;
+  }
 }
