@@ -4,13 +4,13 @@ import 'firebase/firestore';
 import 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDegIwz6Q_hGTSmFlqtHYE87Dl6Ee23DiI",
-  authDomain: "wt-gadgets.firebaseapp.com",
-  projectId: "wt-gadgets",
-  storageBucket: "wt-gadgets.appspot.com",
-  messagingSenderId: "659905672365",
-  appId: "1:659905672365:web:5dfd668852230681e38224",
-  measurementId: "G-JMD7YEWBL2"
+  apiKey: "AIzaSyB5fUEaPPFX_UvRzUgdPsHj8Qelmr9v3DE",
+  authDomain: "wt-gadgets-b605c.firebaseapp.com",
+  projectId: "wt-gadgets-b605c",
+  storageBucket: "wt-gadgets-b605c.appspot.com",
+  messagingSenderId: "173029757052",
+  appId: "1:173029757052:web:06e340e5906447dda379f9",
+  measurementId: "G-9F8PHRDMB7"
 };
 
 class Firebase {
