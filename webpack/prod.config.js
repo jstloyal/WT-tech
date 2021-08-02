@@ -16,7 +16,7 @@ module.exports = merge(baseConfig, {
     chunkFilename: 'js/[id].[chunkhash].js'
   },
   mode: 'production',
-  devtool: 'source-map',
+  // devtool: 'source-map',
   optimization: {
     splitChunks: {
       cacheGroups: {
@@ -48,7 +48,7 @@ module.exports = merge(baseConfig, {
         removeAttributeQuotes: true
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'dependency'
+      chunksSortMode: 'auto'
     }),
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, '../dist/404.html'),
@@ -60,7 +60,7 @@ module.exports = merge(baseConfig, {
         removeAttributeQuotes: true
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-      chunksSortMode: 'dependency'
+      chunksSortMode: 'auto'
     }),
     new CopyWebpackPlugin([
       {
@@ -79,15 +79,15 @@ module.exports = merge(baseConfig, {
       'process.env.FIREBASE_APP_ID':JSON.stringify(process.env.FIREBASE_APP_ID)
     }),
     new workboxPlugin.GenerateSW({
-      cacheId: 'CodingCafe',
+      cacheId: 'WTgadgets',
       swDest: 'sw.js',
       navigateFallback: '/index.html',
-      navigateFallbackWhitelist: [ /^\/[^\_]+\/?/ ],
+      navigateFallbackAllowlist: [ /^\/[^\_]+\/?/ ],
       clientsClaim: true,
       skipWaiting: true,
       runtimeCaching: [{
           urlPattern: new RegExp('^https://fonts.(?:googleapis|gstatic).com/(.*)'),
-          handler: 'cacheFirst'
+          handler: 'CacheFirst'
       },
       {
         urlPattern: new RegExp(process.env.FIREBASE_DB_URL),
