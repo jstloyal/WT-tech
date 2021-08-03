@@ -101,7 +101,7 @@ const Home = (props) => {
             <div 
                 className="product-list" 
                 ref={productListWrapper}
-                style={{ gridTemplateColumns: `repeat(${columnCount}, 160px)` }}
+                style={{ gridTemplateColumns: `repeat(6, 160px)` }}
             >
               {store.filteredProducts.length === 0 ? new Array(12).fill({}).map((product, index) => (
                 <ProductItem
