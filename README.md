@@ -80,6 +80,18 @@ In this panel/page, user can view Product they order, total price and also add o
     <img src="static/checkout2.png" alt="checkout" >
 </p>
 
+<p align="center">
+    <img src="static/home-page.png" alt="checkout" >
+</p>
+Home page
+
+
+<p align="center">
+    <img src="static/product-view.png" alt="checkout" >
+</p>
+Product view
+
+
 
 ## Live Link  (Netlify)
 [Project live link](https://objective-lovelace-6fd75c.netlify.app/)
